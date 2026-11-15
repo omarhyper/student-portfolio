@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Umar Saad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Umar<span>S.</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>My Projects</h2>
+      <p style="margin-bottom: 1.5rem;">
+        Here are some sample projects I have worked on. Each one helped me practice HTML, CSS, and JavaScript.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img src="images/project1.jpg" alt="Personal blog screenshot" class="project-img"
+               onerror="this.src='https://placehold.co/400x200/1a365d/ffffff?text=Personal+Blog'">
+          <div class="project-body">
+            <h3>Personal Blog</h3>
+            <p>
+              A clean multi-page blog built with semantic HTML and CSS Grid.
+              Features article cards, a simple search filter with JavaScript, and a responsive layout.
+            </p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <img src="images/project2.jpg" alt="Todo app screenshot" class="project-img"
+               onerror="this.src='https://placehold.co/400x200/2b6cb0/ffffff?text=Task+Manager'">
+          <div class="project-body">
+            <h3>Simple Task Manager</h3>
+            <p>
+              An interactive to-do application that lets users add, complete, and delete tasks.
+              Data is stored in the browser using localStorage. This project inspired the Academic Planner page.
+            </p>
+            <div class="project-links">
+              <a href="planner.html">Try Similar</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <img src="images/project3.jpg" alt="Landing page screenshot" class="project-img"
+               onerror="this.src='https://placehold.co/400x200/ed8936/ffffff?text=Landing+Page'">
+          <div class="project-body">
+            <h3>Product Landing Page</h3>
+            <p>
+              A fully responsive marketing page for a fictional online learning platform.
+              Includes a pricing table, feature sections, and a contact form with basic validation.
+            </p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+   
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Umar Saad · COS 106 Term Project · MIVA Open University</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Umar Saad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Umar<span>S.</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" class="active">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Academic Planner</h2>
+      <p style="margin-bottom: 1.25rem; color: var(--text-light);">
+        Add your study tasks, assignments, and deadlines. Mark them complete when done or delete them.
+        Your list is saved in the browser so it stays even after you close the page.
+      </p>
+
+      <div class="planner-form">
+        <input type="text" id="task-input" placeholder="e.g. Finish COS 106 assignment" aria-label="New task">
+        <button type="button" id="add-task" class="btn">Add Task</button>
+      </div>
+
+      <p id="empty-msg" class="empty-msg">No tasks yet. Add one above to get started!</p>
+
+      <ul id="task-list" class="task-list" aria-live="polite">
+        <!-- Tasks rendered by JavaScript -->
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>How it works</h2>
+      <ul style="padding-left: 1.25rem; color: var(--text-light);">
+        <li>Type a task and click <strong>Add Task</strong> or press Enter</li>
+        <li>Check the box to mark a task as completed</li>
+        <li>Click the × button to delete a task</li>
+        <li>Everything is stored locally using JavaScript arrays and localStorage</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Umar Saad · COS 106 Term Project · MIVA Open University</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
